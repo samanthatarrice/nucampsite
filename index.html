@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
@@ -21,14 +20,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="image-fluid">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <button class="btn btn-info btn-lg"><a href="#reserveForm" class="text-nowrap text-white">Reserve Campsite</a></button>
+                    <a href="#reserveForm" class="btn btn-info btn-lg text-nowrap">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -36,7 +35,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="img/logo.png" height="30" width="30" alt=""></a>
+            <a href="#" class="navbar-brand"><img src="img/logo.png" height="30" width="30"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
@@ -69,12 +68,14 @@
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
-            <div class="col media">
-                <div class="media-body align-self-center">
-                    <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img src="img/react-lake-thumb.jpg" alt="React Lake Campground" class="img-thumbnail d-flex ml-3">
                 </div>
-                <img src="img/react-lake-thumb.jpg" alt="React Lake Campground" class="img-thumbnail d-flex ml-3">
             </div>
         </div>
 
@@ -103,7 +104,7 @@
                                 <label for="numCampers" class="col-sm-6">Number of Campers</label>
                                 <div class="col">
                                     <select name="numCampers" id="numCampers" class="form-control">
-                                        <option value="select">Select...</option>
+                                        <option selected>Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -119,7 +120,7 @@
                                     <input type="date" id="date" name="date" placeholder="date" class="form-control">
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row form-group">
                                 <div class="col">
                                     <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
