@@ -3,37 +3,65 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Neucha', cursive;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
-  color: #3046C5;
+  color: #6727a3;
 }
 
 header h2 {
-  color: #CEC8FF;
+  color: #6727a3;
+  font-size: 1.5rem;
 }
 
-.site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0;
-}
+/*------------------------------
+      Home & Global Styles
+-------------------------------*/
 
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+  background: linear-gradient(to right, #8963ba,  #90c290, #afe3c0, #43bccd, #6727a3);
   color: white;
 }
+
+img[src="img/logo.png"] {
+  background: white;
+  border-radius: 50%;
+  height: 125px;
+  width: aut;
+}
+
+a[href="#reserveForm"] {
+  background: #43bccd;
+  color: white;
+  border: 2px solid white;
+}
+
+.navbar {
+  background: #6727a3;
+}
+
+.navbar-brand img {
+  background: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  filter: none;
+}
+
+/*---Carousel---*/
 
 .row-content {
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
-}
-
-.navbar {
-  background-color: #901CAD;
 }
 
 a, a:hover {
@@ -46,5 +74,85 @@ a, a:hover {
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #afe3c0;
+}
+
+/*--Reserve Form--*/
+
+.reserve-header {
+  background: #43bccd;
+  text-align: center;
+}
+
+.search {
+  background: #6727a3;
+  color: white;
+}
+
+.search:hover {
+  background: #8963ba;
+  color: white;
+}
+
+/*--Footer--*/
+
+.site-footer .container {
+  max-width: 1200px;
+}
+
+.site-footer {
+  background: linear-gradient(to right, #8963ba,  #90c290, #afe3c0, #43bccd, #6727a3);
+  padding: 20px 0;
+}
+
+footer a,
+footer .btn {
+  font-size: 1.2rem;
+}
+
+/*------------------------------
+            About Us
+-------------------------------*/
+
+a[data-target="#bootstrap"],
+a[data-target="#git"], 
+a[data-target="#mongo"],
+a[data-target="#node"] {
+  color: #43bccd;
+}
+
+small {
+  color: black;
+}
+
+/*------------------------------
+          Contact Us
+-------------------------------*/
+
+.contact-info {
+  font-size: 1.2rem;
+}
+
+.contact-links {
+  color: #43bccd;
+  text-decoration: none;
+}
+
+/*------------------------------
+         Media Queries
+-------------------------------*/
+
+@media (max-width: 768px) {
+  h1, h2 {
+    text-align: center;
+  }
+
+  img[src="img/logo.png"] {
+    text-align: right;
+    display: block;
+  }
+
+  a[href="#reserveForm"] {
+    margin-top: 2rem;
+  }
 }

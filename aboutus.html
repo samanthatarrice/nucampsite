@@ -10,7 +10,7 @@
     <!-- Fonts & CSS Stylesheet -->
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha&family=Open+Sans&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -20,28 +20,33 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"><img src="img/logo.png" class="image-fluid" alt=""></a>
+                <div class="logo-header col-sm-4 col-md-3 col-lg-2">
+                    <img src="img/logo.png" class="img-fluid mx-auto my-3">
                 </div>
-                <div class="col">
+                <div class="col col-sm-8 col-md-5 col-lg-8 d-flex flex-column justify-content-center">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-            </div> 
+            </div>
         </div>
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a href="index.html" class="navbar-brand"><img src="img/logo.png" height="30" width="30" alt=""></a>
+            <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                    <li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-info fa-lg"></i>About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                    <li class="nav-item"><a href="contactus.html" class="nav-link"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home fa-lg mx-1"></i>Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active"><i class="fa fa-info fa-lg mx-1"></i>About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list fa-lg mx-1"></i>Sites</a></li>
+                    <li class="nav-item "><a href="contactus.html" class="nav-link"><i class="fa fa-address-card fa-lg mx-1"></i>Contact</a></li>
                 </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
@@ -53,19 +58,19 @@
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active">About Us</li>
                 </ol>
-               <h2>About Us</h2>
+               <h2 class="text-center">About Us</h2>
                <hr />
             </div>
         </div>
 
         <div class="row row-content">
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6">
                 <h3>Our Mission</h3>
                 <p>We present a curated database of the best campsites in the vast woods and backcountry of the World Wide Web Wilderness. We increase access to adventure for the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="card">
-                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <h3 class="card-header bg-info text-white">Facts At a Glance</h3>
                     <div class="card-body">
                         <dl class="row">
                             <dt class="col-6">Founded</dt>
@@ -94,7 +99,7 @@
 
         <div class="row row-content">
             <div class="col">
-                <h3>Community Partners</h3>
+                <h2 class="mb-1 text-center">Community Partners</h2>
                 <div id="accordion">
                     <div class="card">
                         <div role="tab" class="card-header">
@@ -149,19 +154,19 @@
         </div>
 
         <div class="row row-content">
-            <div class="col-sm-9">
-                <h2>Facts & Figures</h2>
+            <div class="col-sm-10 mx-auto">
+                <h2 class="text-center">Facts & Figures</h2>
                 <div class="table-responsive">
-                    <table class="table table-striped">
+                    <table class="table table-bordered">
                         <thead>
-                            <tr class="bg-primary text-light">
+                            <tr class="bg-info text-light">
                                 <th></th>
                                 <th>2016</th>
                                 <th>2017</th>
                                 <th>2018</th>
                             </tr>
                         </thead>
-                        <tbody class="table-primary">
+                        <tbody class=" table-bordered">
                             <tr>
                                 <th>Staff Wilderness Experts</th>
                                 <td>10</td>
@@ -189,28 +194,26 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
+            <div class="row d-flex align-items-center my-3">
+                <div class="col-md-3 col-sm-2">
+                    <ul class="list-unstyled text-white d-flex flex-column align-items-center mb-0 my-3">
+                        <li class="my-1"><a href="index.html">Home</a></li>
+                        <li class="my-1"><a href="#">About</a></li>
+                        <li class="my-1"><a href="#">Sites</a></li>
+                        <li class="my-1"><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <div class="col-md-6 col-sm-5 text-center p-0 my-3">
+                    <a class="btn btn-social-icon btn-instagram m-2" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook m-2" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter m-2" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google m-2" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                <div class="col-md-3 col-sm-5 text-center p-0">
+                    <a role="button" class="btn btn-link text-white" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
+                    <a role="button" class="btn btn-link text-white" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
 
