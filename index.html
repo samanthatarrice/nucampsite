@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <!-- Fonts & CSS Stylesheet -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha&family=Open+Sans&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -19,10 +19,10 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
+                <div class="logo-header col-sm-4 col-md-3 col-lg-2">
+                    <img src="img/logo.png" class="img-fluid mx-auto my-3">
                 </div>
-                <div class="col">
+                <div class="col col-sm-8 col-md-5 col-lg-8 d-flex flex-column justify-content-center">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
@@ -89,14 +89,14 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="img/logo.png" height="30" width="30"></a>
+            <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                    <li class="nav-item"><a href="aboutus.html" class="nav-link"><i class="fa fa-info fa-lg"></i>About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                    <li class="nav-item"><a href="contactus.html" class="nav-link"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-home fa-lg mx-1"></i>Home</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link"><i class="fa fa-info fa-lg mx-1"></i>About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list fa-lg mx-1"></i>Sites</a></li>
+                    <li class="nav-item "><a href="contactus.html" class="nav-link"><i class="fa fa-address-card fa-lg mx-1"></i>Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
                     <a role="button" data-toggle="modal" data-target="#loginModal">
@@ -150,7 +150,7 @@
             <div class="col-md-8 mx-auto">
                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#homeCarousel" data-slide-to="0" class="active mb-2"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
                         <li data-target="#homeCarousel" data-slide-to="2"></li>
                     </ol>
@@ -194,29 +194,29 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 order-sm-last">
-                <h2 class="text-sm-right">Discover & Review</h2>
+            <div class="col-sm-12 col-md-3 order-md-last">
+                <h2 class="text-center py-5 my-2 border">Discover & Review</h2>
             </div>
             <div class="col">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                        <h3 class="pb-2">Our Campsites</h3>
+                        <p class="d-sm-block m-0">Explore our growing database of curated campsites and leave your own reviews!</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
+            <div class="col-sm-12 col-md-3">
+                <h2 class="border py-5 text-center">Featured Campsites</h2>
             </div>
             <div class="col">
                 <div class="media">
                     <div class="media-body align-self-center">
-                        <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                        <h3 class="pb-2">React Lake Campground</h3>
+                        <p class="d-sm-block m-0">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
                     <img src="img/react-lake-thumb.jpg" alt="React Lake Campground" class="img-thumbnail d-flex ml-3">
                 </div>
@@ -224,49 +224,46 @@
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 order-sm-last">
-                <h2 class="text-sm-right">Our Community Partners</h2>
+            <div class="col-sm-12 col-md-3 order-md-last">
+                <h2 class="text-center py-5 my-2 border">Our Community Partners</h2>
             </div>
             <div class="col">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="media-body align-self-center">
-                        <h3>Bootstrap Outfitters</h3>
-        				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        <h3 class="pb-2">Bootstrap Outfitters</h3>
+        				<p class=" d-sm-block m-0">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
+            <div class="row d-flex align-items-center my-3">
+                <div class="col-md-3 col-sm-2">
+                    <ul class="list-unstyled text-white d-flex flex-column align-items-center mb-0 my-3">
+                        <li class="my-1"><a href="#">Home</a></li>
+                        <li class="my-1"><a href="aboutus.html">About</a></li>
+                        <li class="my-1"><a href="#">Sites</a></li>
+                        <li class="my-1"><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <div class="col-md-6 col-sm-5 text-center p-0 my-3">
+                    <a class="btn btn-social-icon btn-instagram m-2" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook m-2" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter m-2" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google m-2" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                <div class="col-md-3 col-sm-5 text-center p-0">
+                    <a role="button" class="btn btn-link text-white" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
+                    <a role="button" class="btn btn-link text-white" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
